@@ -9,5 +9,10 @@ export default defineConfig({
   },
   plugins: [svelte({
     /* plugin options */
-  })]
+  })],
+  resolve: {
+    alias: [
+      { find: '@', replacement: '/src' }
+    ],
+  }
 })
